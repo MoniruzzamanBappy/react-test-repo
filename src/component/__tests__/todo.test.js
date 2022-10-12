@@ -48,3 +48,15 @@ test("take a snap shot", () => {
   const { asFragment } = render(<Todo data={datas} />);
   expect(asFragment()).toMatchSnapshot();
 });
+
+describe("SearchForm", () => {
+    test("renders SearchForm", () => {
+    render(<Todo/>);
+    
+    expect(screen.getByRole("input", { name: /destination/i})
+    ).toBeVisible();
+    
+    expect(screen.getByRole("button", { name: /search/i })
+    ).toBeVisible();
+    });
+    });

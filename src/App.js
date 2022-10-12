@@ -17,6 +17,11 @@ function App() {
       id: 3,
       title: "Hello world 3",
       completed: true
+    },
+    {
+      id: 4,
+      title: "Hello world 4",
+      completed: true
     }
   ]
   return (
